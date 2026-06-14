@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="FlowStack by MASoft Labs: digital products, AI workflows, n8n templates, automation systems, SaaS tools, and software engineering resources." />
+    <title>FlowStack | MASoft Labs Digital Products Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2563EB',
+              secondary: '#0F172A',
+              accent: '#22C55E',
+              ink: '#020617'
+            },
+            fontFamily: {
+              sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif']
+            },
+            boxShadow: {
+              glow: '0 0 0 1px rgba(37,99,235,.22), 0 24px 80px rgba(37,99,235,.18)'
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+  </head>
+  <body class="bg-ink text-slate-100 antialiased">
+    <div class="min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(37,99,235,.24),transparent_34rem),radial-gradient(circle_at_top_right,rgba(34,197,94,.14),transparent_28rem),#020617]">
+      <header id="top" class="sticky top-0 z-50 border-b border-white/10 bg-secondary/80 backdrop-blur-xl">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8" aria-label="Primary navigation">
+          <a href="#top" class="flex items-center gap-3" aria-label="MASoft Labs home">
+            <span class="grid h-10 w-10 place-items-center rounded-2xl bg-primary shadow-glow"><span class="text-lg font-black">M</span></span>
+            <span>
+              <span class="block text-sm font-semibold uppercase tracking-[0.28em] text-slate-400">MASoft Labs</span>
+              <span class="block text-xl font-extrabold tracking-tight">FlowStack</span>
+            </span>
+          </a>
+          <button id="menuToggle" class="rounded-xl border border-white/10 p-2 text-slate-200 lg:hidden" aria-label="Open navigation" aria-expanded="false">
+            <span class="block h-0.5 w-6 bg-current"></span><span class="mt-1.5 block h-0.5 w-6 bg-current"></span><span class="mt-1.5 block h-0.5 w-6 bg-current"></span>
+          </button>
+          <div id="topLinks" class="hidden items-center gap-6 text-sm font-medium text-slate-300 lg:flex">
+            <a class="hover:text-white" href="#products">Products</a>
+            <a class="hover:text-white" href="#dashboard">Dashboard</a>
+            <a class="hover:text-white" href="#testimonials">Customers</a>
+            <a class="hover:text-white" href="#faq">FAQ</a>
+            <a class="rounded-full bg-primary px-5 py-2.5 font-semibold text-white shadow-glow hover:bg-blue-500" href="#products">Browse templates</a>
+          </div>
+        </nav>
+        <div id="mobileMenu" class="hidden border-t border-white/10 bg-secondary px-4 py-4 lg:hidden">
+          <div class="grid gap-3 text-sm font-medium text-slate-300">
+            <a href="#products">Products</a><a href="#dashboard">Dashboard</a><a href="#testimonials">Customers</a><a href="#faq">FAQ</a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-24">
+          <div class="flex flex-col justify-center">
+            <p class="mb-5 inline-flex w-fit rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-sm font-semibold text-blue-200">Build Faster. Automate Smarter.</p>
+            <h1 class="max-w-4xl text-4xl font-black tracking-tight text-white sm:text-6xl">A premium Payhip storefront and SaaS dashboard for digital product teams.</h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-300">FlowStack helps MASoft Labs showcase AI workflows, n8n templates, automation systems, SaaS tools, and software engineering resources with a Stripe-inspired dark interface.</p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="#dashboard" class="rounded-full bg-primary px-6 py-3 text-center font-bold text-white shadow-glow hover:bg-blue-500">Preview dashboard</a>
+              <a href="#products" class="rounded-full border border-white/15 px-6 py-3 text-center font-bold text-white hover:bg-white/10">Explore products</a>
+            </div>
+          </div>
+          <div class="relative rounded-[2rem] border border-white/10 bg-white/[.04] p-3 shadow-2xl backdrop-blur">
+            <div class="rounded-[1.5rem] border border-white/10 bg-secondary/95 p-5">
+              <div class="mb-5 flex items-center justify-between"><span class="font-bold">Revenue pulse</span><span class="rounded-full bg-accent/15 px-3 py-1 text-sm font-semibold text-accent">+24.8%</span></div>
+              <div class="grid gap-4 sm:grid-cols-3">
+                <div class="rounded-2xl bg-white/[.04] p-4"><p class="text-sm text-slate-400">MRR</p><p class="mt-2 text-2xl font-black">$18.4k</p></div>
+                <div class="rounded-2xl bg-white/[.04] p-4"><p class="text-sm text-slate-400">Orders</p><p class="mt-2 text-2xl font-black">1,284</p></div>
+                <div class="rounded-2xl bg-white/[.04] p-4"><p class="text-sm text-slate-400">Rating</p><p class="mt-2 text-2xl font-black">4.9</p></div>
+              </div>
+              <canvas id="heroChart" class="mt-6 h-52 w-full" width="680" height="260" aria-label="Revenue preview chart"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <section id="products" class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+          <div class="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div><p class="text-sm font-bold uppercase tracking-[.24em] text-accent">Featured products</p><h2 class="mt-2 text-3xl font-black text-white">Digital systems ready to ship</h2></div>
+            <a href="#" class="text-sm font-bold text-blue-300 hover:text-blue-200">View Payhip catalog →</a>
+          </div>
+          <div id="featuredProducts" class="grid gap-5 md:grid-cols-2 xl:grid-cols-4"></div>
+        </section>
+
+        <section class="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
+          <div class="grid gap-4 md:grid-cols-5" id="categories"></div>
+        </section>
+
+        <section id="dashboard" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+          <div class="overflow-hidden rounded-[2rem] border border-white/10 bg-secondary/80 shadow-2xl backdrop-blur">
+            <div class="grid min-h-[760px] lg:grid-cols-[280px_1fr]">
+              <aside class="border-b border-white/10 bg-slate-950/60 p-5 lg:border-b-0 lg:border-r">
+                <div class="mb-8 flex items-center gap-3"><span class="grid h-11 w-11 place-items-center rounded-2xl bg-primary font-black">M</span><div><p class="font-black">MASoft Labs</p><p class="text-sm text-slate-400">FlowStack Admin</p></div></div>
+                <nav id="sidebarNav" class="grid gap-2" aria-label="Dashboard sections"></nav>
+              </aside>
+              <div class="min-w-0">
+                <div class="flex flex-col gap-4 border-b border-white/10 p-5 md:flex-row md:items-center md:justify-between">
+                  <div><p class="text-sm font-semibold text-slate-400">Dashboard Home</p><h2 class="text-2xl font-black">Revenue command center</h2></div>
+                  <div class="flex gap-3"><input class="w-full rounded-2xl border border-white/10 bg-white/[.04] px-4 py-3 text-sm outline-none focus:border-primary md:w-72" placeholder="Search orders, customers..." /><button class="rounded-2xl bg-primary px-5 py-3 text-sm font-bold">Export</button></div>
+                </div>
+                <div class="space-y-5 p-5">
+                  <div id="metricCards" class="grid gap-4 sm:grid-cols-2 xl:grid-cols-5"></div>
+                  <div class="grid gap-5 xl:grid-cols-[1.35fr_.65fr]">
+                    <section class="rounded-3xl border border-white/10 bg-white/[.035] p-5"><div class="mb-5 flex items-center justify-between"><h3 class="font-bold">Revenue chart</h3><span class="text-sm text-slate-400">Last 7 months</span></div><canvas id="revenueChart" class="h-72 w-full" width="900" height="320"></canvas></section>
+                    <section class="rounded-3xl border border-white/10 bg-white/[.035] p-5"><h3 class="mb-5 font-bold">Automation mix</h3><div id="mixList" class="space-y-4"></div></section>
+                  </div>
+                  <div class="grid gap-5 xl:grid-cols-2">
+                    <section class="rounded-3xl border border-white/10 bg-white/[.035] p-5"><h3 class="mb-5 font-bold">Recent orders</h3><div class="overflow-x-auto"><table class="w-full min-w-[560px] text-left text-sm"><thead class="text-slate-400"><tr><th class="pb-3">Customer</th><th class="pb-3">Product</th><th class="pb-3">Status</th><th class="pb-3 text-right">Amount</th></tr></thead><tbody id="ordersTable" class="divide-y divide-white/10"></tbody></table></div></section>
+                    <section class="rounded-3xl border border-white/10 bg-white/[.035] p-5"><h3 class="mb-5 font-bold">Product performance</h3><div class="overflow-x-auto"><table class="w-full min-w-[560px] text-left text-sm"><thead class="text-slate-400"><tr><th class="pb-3">Product</th><th class="pb-3">Sales</th><th class="pb-3">Conversion</th><th class="pb-3 text-right">Revenue</th></tr></thead><tbody id="performanceTable" class="divide-y divide-white/10"></tbody></table></div></section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="testimonials" class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8"><div class="grid gap-5 md:grid-cols-3" id="testimonialsGrid"></div></section>
+        <section id="faq" class="mx-auto max-w-4xl px-4 py-14 sm:px-6 lg:px-8"><h2 class="mb-8 text-center text-3xl font-black">FAQ</h2><div id="faqList" class="space-y-4"></div></section>
+      </main>
+      <footer class="border-t border-white/10 px-4 py-10 sm:px-6 lg:px-8"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 text-sm text-slate-400 md:flex-row"><p>© 2026 MASoft Labs. FlowStack for Payhip digital products.</p><p>Build Faster. Automate Smarter.</p></div></footer>
+    </div>
+    <script src="src/js/app.js" defer></script>
+  </body>
+</html>
